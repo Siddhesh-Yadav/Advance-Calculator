@@ -52,7 +52,8 @@ class App extends React.Component {
       })
     }
   }
-  handleClick = (e) => {
+  handleClick = (e) => {    
+    console.log(this.state.history.length);
     const { display, lastPressed } = this.state;
     const { innerText } = e.target;
     switch (innerText) {
@@ -149,10 +150,11 @@ class App extends React.Component {
           <div className="wrapperDiv" id = {`${slide}`}>
             <div id="upperDiv">
               <div className="history">
-                {history.map((e)=>([
-                  <div className="displays equatnHis">{e.eqtn}</div >,
-                  <div className='displays ansHis' >{e.ans}</div>
-                ]))}
+                {history.length===0?<div className='displays ansHis' >0</div>           
+                  : history.map((e)=>([
+                    <div className="displays equatnHis">{e.eqtn}</div >,
+                    <div className='displays ansHis' >{e.ans}</div>                  
+                  ]))}
               </div>
               <div className='displays' id="display">{display}</div>
               <div className='displays' id="result"> {result}</div>
