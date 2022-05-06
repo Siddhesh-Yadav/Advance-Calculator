@@ -141,7 +141,7 @@ body{
   font-size: 4rem;
   color: #F2F2F4;
   overflow-y: hidden;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 #lowerDiv{
   border-radius: 12px;
@@ -186,7 +186,7 @@ body{
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  font-size: 2rem;
+  font-size: 2.25rem;
   box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
   border-radius: 16px;
 }
@@ -293,14 +293,14 @@ body{
     font-size: 3.5rem;
   }
   #display{
-    padding-bottom: 2rem;
+    padding-bottom: 2.4rem;
   }
   #result{
     padding-bottom:5rem;
   }
 }
 
-@media (max-height:730px){
+@media (max-height:730px) and ( min-width:1360px){
   #upperDots{
     left:39.5%;
   }
@@ -314,7 +314,7 @@ body{
     font-size: 3rem;
   }
   #display{
-    padding-bottom: 1.9rem;
+    padding-bottom: 2rem;
   }
   #result{
     padding-bottom:4rem;
