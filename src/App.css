@@ -173,20 +173,20 @@ body{
   grid-template-columns: auto auto auto auto;  
   justify-content: space-around;
   align-content: space-around;
-  height: 21rem;/* Absolute */
+  height: 38vh;/* Absolute */
   margin: 0 6px; /*Absolute */
 }
 .keys{
   color: #728AB7;
-  width: 60px;
-  height: 60px;
+  width: 3.2rem;
+  height: 3.2rem;
   background: none;
   border: none;
   padding: 0;
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  font-size: 2.25rem;
+  font-size: 2rem;
   box-shadow: -10px -10px 24px rgba(255, 255, 255, 0.6), 10px 10px 24px rgba(174, 174, 192, 0.2);
   border-radius: 16px;
 }
@@ -276,5 +276,64 @@ body{
   .keys{
     height: 4.2rem;
     width: 4.2rem;
+  }
+}
+
+@media (min-width:1360px){
+  #upperDots{
+    left:37.5%;
+  }
+  #lowerDots{
+    right:36.1%;
+  }
+  .equatnHis,#display{
+    font-size: 2rem;
+  }
+  .ansHis,#result{
+    font-size: 3.5rem;
+  }
+  #display{
+    padding-bottom: 2rem;
+  }
+  #result{
+    padding-bottom:5rem;
+  }
+}
+
+@media (max-height:730px){
+  #upperDots{
+    left:39.5%;
+  }
+  #lowerDots{
+    right:39.1%;
+  }
+  .equatnHis,#display{
+    font-size: 1.7rem;
+  }
+  .ansHis,#result{
+    font-size: 3rem;
+  }
+  #display{
+    padding-bottom: 1.9rem;
+  }
+  #result{
+    padding-bottom:4rem;
+  }
+  #keyPad{
+    height: 36vh;
+  }
+  .keys{
+    height: 2.2rem;
+    width: 2.2rem;
+    font-size: 1.6rem;
+  }
+  #divide::after{
+    left: -27%;
+    font-size: 2rem;
+    top: -20%;
+  }
+  #multiply::after{
+    left: -22%;
+    top: -10%;
   }
 }
